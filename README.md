@@ -20,6 +20,7 @@ can be downloaded here: https://boxup.uni-potsdam.de/s/97GXLpzLsZHKoTP (password
 * **scripts:** contains all code for the Generalized Recurrence Quantification Analysis (for 2d data) (`scripts/grqa`) 
 as well as several other helper functions (`scripts/utils`)
 * **tests:** contains unit tests, run with `python -m unittest`  
+* **thesis:** contains the Master's thesis
  
    
 * **load_catchments.py:** prepare the river catchment data by cutting them to the extent of their largest interior rectangle
