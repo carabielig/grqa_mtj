@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:1
+#SBATCH --qos=gpushort
+#SBATCH --job-name=grqa
+#SBATCH --chdir=/p/tmp/carabi
+#SBATCH	--output=cluster_logs/grqa_test_images-%j.out
+#SBATCH --error=cluster_logs/grqa_test_images-%j.err
+
+echo "------------------------------"
+echo "SLURM JOB ID: $SLURM_JOBID"
+echo "------------------------------"
+
+echo "$1"
+
+module load python
+cd ~/grqa_mtj
+source mtj_env/bin/activate
+python3 run_grqa.py

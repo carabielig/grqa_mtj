@@ -1,0 +1,13 @@
+mtj_env
+.idea
+data
+latex/*.*
+!latex/*.tex
+!latex/*.pdf
+latex/chapters/*.*
+!latex/chapters/*.tex
+literature/bib/*.bib.sav
+img/*
+!img/latex/
+**/__pycache__
+.ipynb_checkpoints/
